@@ -1,0 +1,20 @@
+@CHARSET "ISO-8859-1";
+.table > tbody>  tr > td{
+	vertical-align: middle;
+}
+
+a:link { 
+	color: #646464; 
+} 
+
+a:visited { 
+	color: #646464; 
+} 
+
+a:hover { 
+	color: silver; 
+} 
+
+a:active { 
+	color: #646464; 
+} 

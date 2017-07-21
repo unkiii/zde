@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 14-jul-2017 10:03:08 by Hibernate Tools 4.3.5.Final -->
+<hibernate-mapping>
+    <class name="tablas.Admin" table="admin" catalog="destinacionpunto" optimistic-lock="version">
+        <composite-id name="id" class="tablas.AdminId">
+            <key-property name="id" type="java.lang.Integer">
+                <column name="id" />
+            </key-property>
+            <key-property name="nif" type="string">
+                <column name="nif" length="50" />
+            </key-property>
+            <key-property name="ultimaconex" type="date">
+                <column name="ultimaconex" length="10" />
+            </key-property>
+        </composite-id>
+    </class>
+</hibernate-mapping>

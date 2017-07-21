@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated 14-jul-2017 10:03:08 by Hibernate Tools 4.3.5.Final -->
+<hibernate-mapping>
+    <class name="tablas.Puntosinteres" table="puntosinteres" catalog="destinacionpunto" optimistic-lock="version">
+        <id name="iddestinacion" type="java.lang.Integer">
+            <column name="iddestinacion" />
+            <generator class="foreign">
+                <param name="property">destinaciones</param>
+            </generator>
+        </id>
+        <one-to-one name="destinaciones" class="tablas.Destinaciones" constrained="true"></one-to-one>
+        <property name="id" type="java.lang.Integer">
+            <column name="id" />
+        </property>
+        <property name="nombre" type="string">
+            <column name="nombre" length="50" />
+        </property>
+        <property name="descripcion" type="string">
+            <column name="descripcion" length="50" />
+        </property>
+        <property name="tipo" type="string">
+            <column name="tipo" length="50" />
+        </property>
+        <property name="actividades" type="string">
+            <column name="actividades" length="50" />
+        </property>
+    </class>
+</hibernate-mapping>
